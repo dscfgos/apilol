@@ -2,9 +2,6 @@ package com.dscfgos.lol.model.dtos.featured_games;
 
 import java.util.List;
 
-import com.dscfgos.lol.model.constants.GameMode;
-import com.dscfgos.lol.model.constants.MatchType;
-
 /**
  * @author dscfgos
  * @version 1.0
@@ -15,10 +12,10 @@ public class FeaturedGameInfo
 	private List<BannedChampion> bannedChampions ; 	// - Banned champion information
 	private  long gameId ; 							// - The ID of the game
 	private  long gameLength ; 						// - The amount of time in seconds that has passed since the game started
-	private GameMode gameMode ; 						// - The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO)
+	private String gameMode ; 						// - The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO)
 	private  long gameQueueConfigId ; 				// - The queue type (queue types are documented on the Game Constants page)
 	private  long gameStartTime ; 					// - The game start time represented in epoch milliseconds
-	private MatchType gameType ; 						// - The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
+	private String gameType ; 						// - The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
 	private  long mapId ; 							// - The ID of the map
 	private Observer observers ; 					// - The observer information
 	private List<Participant> participants ; 		// - The participant information
@@ -42,10 +39,10 @@ public class FeaturedGameInfo
 	public void setGameLength(long gameLength) {
 		this.gameLength = gameLength;
 	}
-	public GameMode getGameMode() {
+	public String getGameMode() {
 		return gameMode;
 	}
-	public void setGameMode(GameMode gameMode) {
+	public void setGameMode(String gameMode) {
 		this.gameMode = gameMode;
 	}
 	public long getGameQueueConfigId() {
@@ -60,10 +57,10 @@ public class FeaturedGameInfo
 	public void setGameStartTime(long gameStartTime) {
 		this.gameStartTime = gameStartTime;
 	}
-	public MatchType getGameType() {
+	public String getGameType() {
 		return gameType;
 	}
-	public void setGameType(MatchType gameType) {
+	public void setGameType(String gameType) {
 		this.gameType = gameType;
 	}
 	public long getMapId() {

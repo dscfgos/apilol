@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/retrofit-2.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

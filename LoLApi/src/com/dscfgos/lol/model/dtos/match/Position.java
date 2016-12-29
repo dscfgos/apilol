@@ -1,4 +1,4 @@
-package com.dscfgos.lol.model.dtos.match;
+ package com.dscfgos.lol.model.dtos.match;
 
 /**
  * @author dscfgos

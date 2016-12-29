@@ -2,9 +2,6 @@ package com.dscfgos.lol.model.dtos.current_game;
 
 import java.util.List;
 
-import com.dscfgos.lol.model.constants.GameMode;
-import com.dscfgos.lol.model.constants.MatchType;
-
 
 /**
  * @author dscfgos
@@ -16,10 +13,10 @@ public class CurrentGameInfo
 	private List<BannedChampion> bannedChampions ; 		// - Banned champion information
 	private long gameId ; 								// - The ID of the game
 	private long gameLength ; 							// - The amount of time in seconds that has passed since the game started
-	private GameMode gameMod ; 							// - The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO)
+	private String gameMod ; 							// - The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO)
 	private long gameQueueConfigId ; 					// - The queue type (queue types are documented on the Game Constants page)
 	private long gameStartTime ; 						// - The game start time represented in epoch milliseconds
-	private MatchType gameType ; 						// - The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
+	private String gameType ; 						// - The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
 	private long mapId ; 								// - The ID of the map
 	private Observer observers ; 						// - The observer information
 	private List<CurrentGameParticipant> participants ; // - The participant information
@@ -44,10 +41,10 @@ public class CurrentGameInfo
 	public void setGameLength(long gameLength) {
 		this.gameLength = gameLength;
 	}
-	public GameMode getGameMod() {
+	public String getGameMod() {
 		return gameMod;
 	}
-	public void setGameMod(GameMode gameMod) {
+	public void setGameMod(String gameMod) {
 		this.gameMod = gameMod;
 	}
 	public long getGameQueueConfigId() {
@@ -62,10 +59,10 @@ public class CurrentGameInfo
 	public void setGameStartTime(long gameStartTime) {
 		this.gameStartTime = gameStartTime;
 	}
-	public MatchType getGameType() {
+	public String getGameType() {
 		return gameType;
 	}
-	public void setGameType(MatchType gameType) {
+	public void setGameType(String gameType) {
 		this.gameType = gameType;
 	}
 	public long getMapId() {
