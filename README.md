@@ -1,19 +1,19 @@
 # apilol
 League of Legend Java Api
 
-- Api Versions
-	champion-v1.2
-	current-game-v1.0
-	featured-games-v1.0
-	game-v1.3
-	league-v2.5
-	lol-static-data-v1.2
-	lol-status-v1.0
-	match-v2.2
-	matchlist-v2.2
-	stats-v1.3
-	summoner-v1.4
-	championmastery
+- Api Versions<br />
+	champion-v1.2<br />
+	current-game-v1.0<br />
+	featured-games-v1.0<br />
+	game-v1.3<br />
+	league-v2.5<br />
+	lol-static-data-v1.2<br />
+	lol-status-v1.0<br />
+	match-v2.2<br />
+	matchlist-v2.2<br />
+	stats-v1.3<br />
+	summoner-v1.4<br />
+	championmastery<br />
 	
 	
 
