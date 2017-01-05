@@ -34,7 +34,7 @@ public enum Region
 		return region;
 	}
 	public String getEndpoint() {
-		return endpoint;
+		return getEndpoint(true);
 	}
 	
 	

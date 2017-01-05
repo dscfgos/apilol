@@ -45,5 +45,4 @@ public class Summoner
 	public void setSummonerLevel(long summonerLevel) {
 		this.summonerLevel = summonerLevel;
 	}
-
 }

@@ -18,9 +18,6 @@ public class Endpoints
 	//game
 	public static final String GAME                 			 = "/api/lol/{region}/v1.3/game/by-summoner/{summonerId}/recent";
 
-	
-	
-	
 	//league
 	public static final String LEAGUE_BY_SUMMONER_ALL            = "/api/lol/{region}/v2.5/league/by-summoner/{summonerIds}";
 	public static final String LEAGUE_BY_SUMMONER                = "/api/lol/{region}/v2.5/league/by-summoner/{summonerIds}/entry";

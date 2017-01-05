@@ -7,7 +7,7 @@ package com.dscfgos.lol.model.dtos.champion_mastery;
  * <br />
  * This object contains single Champion Mastery information for player and champion combination.
  */
-public class ChampionMasteryDTO 
+public class ChampionMastery 
 {
 	private long championId ; 						// - Champion ID for this entry.
 	private int championLevel ; 					// - Champion level for specified player and champion combination.

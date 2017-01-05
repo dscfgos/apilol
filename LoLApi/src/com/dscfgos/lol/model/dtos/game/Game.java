@@ -3,7 +3,7 @@ package com.dscfgos.lol.model.dtos.game;
 import java.util.List;
 
 import com.dscfgos.lol.model.constants.GameMode;
-import com.dscfgos.lol.model.constants.MatchType;
+import com.dscfgos.lol.model.constants.GameType;
 import com.dscfgos.lol.model.constants.SubType;
 
 /**
@@ -21,7 +21,7 @@ public class Game
 	private List<Player> fellowPlayers ; 		// - Other players associated with the game.
 	private long gameId ;						// - Game ID.
 	private GameMode gameMode	;				// - Game mode. (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL, ASCENSION, FIRSTBLOOD, KINGPORO, SIEGE)
-	private MatchType  gameType ;				// - Game type. (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
+	private GameType  gameType ;				// - Game type. (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME)
 	private boolean invalid	; 					// - Invalid flag.
 	private int ipEarned	;					// - IP Earned.
 	private int level	; 						// - Level.
@@ -62,10 +62,10 @@ public class Game
 	public void setGameMode(GameMode gameMode) {
 		this.gameMode = gameMode;
 	}
-	public MatchType getGameType() {
+	public GameType getGameType() {
 		return gameType;
 	}
-	public void setGameType(MatchType gameType) {
+	public void setGameType(GameType gameType) {
 		this.gameType = gameType;
 	}
 	public boolean isInvalid() {
